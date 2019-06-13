@@ -1,0 +1,195 @@
+/* ======================================
+    Element style 
+====================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Valera Round', sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    color: #093a58;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* ======================================== 
+    Layout container style 
+======================================== */
+/* Header */
+.main-header-nav {
+    list-style: none;
+    margin-top: 0;
+}
+
+/* Banner */
+.banner {
+    background: #3acec2;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+/* Row */
+.col {
+    margin-bottom: 10px;
+    background: #edf4f7;
+    padding: 1em;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 1px #c6c7bf;
+    margin: 0 .5em .8em;
+}
+
+/* Main-footer */
+.main-footer {
+    text-align: center;
+    background: rgb(22, 22, 23);
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* ========================================
+    Element style 
+======================================== */
+/* Header */
+.title a,
+.main-header-nav a {
+    display: block;
+    padding: .6em 1.2em;
+    text-align: center;
+}
+
+.main-header-nav a {
+    color: #3acec2;
+}
+
+.main-header-nav a:hover {
+    color: #093a58;
+}
+
+/* Banner */
+.logo {
+    width: 190px;
+}
+
+/* Row */
+.button {
+    background: #3acec2;
+    color: #fff;
+    display: inline-block;
+    font-weight: bolder;
+    padding: 0.6em 1.2em;
+    margin-top: 6px;
+    border-radius: 4px;
+}
+
+/* ========================================
+    Media queries
+======================================== */
+@media (min-width: 769px) {
+
+    /* ========================================
+        Element style 
+    ======================================== */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* ========================================
+        Layout container style
+    ======================================== */
+    /* Header */
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-header-nav {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    /* Row */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .col {
+        flex: 1 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button {
+        margin-top: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    /* ========================================
+        Layout container style
+    ======================================== */
+    .header,
+    .row {
+        width: 90%;
+    }
+
+    .row {
+        margin: 0 auto;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .banner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* ========================================
+        Element style
+    ======================================== */
+    .headline {
+        margin-top: 20px;
+    }
+
+    .tagline {
+        font-size: 1.25em;
+        margin-top: 6px;
+        display: inline-block;
+    }
+
+    .col {
+        flex-basis: 30%;
+    }
+}
